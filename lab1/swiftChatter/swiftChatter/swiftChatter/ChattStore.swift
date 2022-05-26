@@ -13,7 +13,7 @@ final class ChattStore {
     private(set) var chatts = [Chatt]()
     private let nFields = Mirror(reflecting: Chatt()).children.count
 
-    private let serverUrl = "https://101.132.173.58/" // replace this with our server's IP address
+    private let serverUrl = "http://47.96.108.110/" // replace this with our server's IP address
     
     func postChatt(_ chatt: Chatt) {
         let jsonObj = ["username": chatt.username,
